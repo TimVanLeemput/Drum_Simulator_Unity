@@ -62,7 +62,7 @@ public class CameraRaycast : MonoBehaviour
             drumHit = _drumHitResult;
             detectionDistance = _drumHitResult.distance + 2;
             UpdateStickPosition(_drumHitResult.point);
-            inputs.Hit.performed += HitDrum;
+            inputs.Hit.performed += HitDrum;    
             OnRaycastHit?.Invoke(_drumHitResult);
 
         }
